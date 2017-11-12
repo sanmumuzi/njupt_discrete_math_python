@@ -1,8 +1,7 @@
-
-
 # 南邮离散数学第一次实验
 # 使用真值表法求主析取范式和主合取范式
 # 未使用任何库
+# https://github.com/sanmumuzi/njupt_discrete_math_python/tree/master 代码已上传至github
 
 combine, extract, negate = '∧∨┓'  # 定义变量代表合取、析取、取反
 condition, double_condition = '→↔'  # 定义条件、双条件
