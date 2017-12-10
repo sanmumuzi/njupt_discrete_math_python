@@ -1,3 +1,6 @@
+# 南邮离散数学第二次实验
+# 集合上二元关系性质判定的实现
+
 import numpy as np  # 使用numpy库进行矩阵运算
 
 lists = []  # 建立list存储序偶
