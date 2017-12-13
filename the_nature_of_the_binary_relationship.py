@@ -18,7 +18,6 @@ for x in lists:
     a[x[0]-1, x[1]-1] = 1  # 通过遍历序偶，将对应位置置为1
 
 x = np.matrix(a)  # 将数组转换为矩阵
-# print(x)
 
 
 def is_reflexivity(matrix_):  # 判断是否具有自反性
