@@ -87,8 +87,7 @@ def is_complemented_lattice(poset):
 
 
 def main():
-    print('----- 请输入用来计算偏序集的number -----')
-    poset = get_poset(int(input()))
+    poset = get_poset(int(input('----- 请输入用来计算偏序集的number -----')))
     max_length = len(poset)
     a = np.zeros((max_length, max_length), dtype=np.int16)
     a = np.matrix(a)
