@@ -66,20 +66,21 @@ def is_euler(deg):
 
 
 if __name__ == '__main__':
-    num = int(input('输入n作为矩阵的维度:'))
-    matrix_ = create_adjacency_matrix(num)
-    is_con = is_connectivity_diagram(matrix_)
-    if is_con:
-        print('该图是连通图...')
-    else:
-        print('该图不是连通图...')
-    deg = get_deg(matrix_)
-    print('该图中每个节点的度：\n', deg)
-    result = is_euler(deg)
-    if result[0] and is_con:
-        if result[1]:
-            print('该图是欧拉图...')
+    while True:
+        num = int(input('输入n作为矩阵的维度:'))
+        matrix_ = create_adjacency_matrix(num)
+        is_con = is_connectivity_diagram(matrix_)
+        if is_con:
+            print('该图是连通图...')
         else:
-            print('该图是半欧拉图...')
-    else:
-        print('该图不是欧拉图...')
+            print('该图不是连通图...')
+        deg = get_deg(matrix_)
+        print('该图中每个节点的度：\n', deg)
+        result = is_euler(deg)
+        if result[0] and is_con:
+            if result[1]:
+                print('该图是欧拉图...')
+            else:
+                print('该图是半欧拉图...')
+        else:
+            print('该图不是欧拉图...')
